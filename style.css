@@ -1,0 +1,233 @@
+ * {
+     box-sizing: border-box;
+     color: #2A2A2A;
+ }
+
+ img {
+     max-width: 100%;
+     height: auto;
+ }
+
+ body {
+     background: url(https://hexschool.github.io/js-filter/assets/bg.jpg);
+     background-size: cover;
+     height: 100vh;
+     font-family: "NotoSansCJKtc-Bold";
+     letter-spacing: 1px;
+     white-space: nowrap;
+ }
+
+ @media (max-width: 575px) {
+     body {
+         background: url(https://hexschool.github.io/js-filter/assets/bg-sm.jpg);
+         background-size: cover;
+         height: 100vh;
+     }
+ }
+
+ .logo a {
+     display: block;
+     background: url(https://firebasestorage.googleapis.com/v0/b/hexschool-courses.appspot.com/o/course%2FJS%20%E5%89%8D%E7%AB%AF%E4%BF%AE%E7%B7%B4%E5%85%A8%E6%94%BB%E7%95%A5%2F1628942714013-logo%20%E6%94%B9.png?alt=media&token=583e78ed-6a6c-4660-9f0e-2f59f8eb78e2) no-repeat;
+     width: 100%;
+     height: 105px;
+     text-indent: 101%;
+     overflow: hidden;
+     cursor: pointer;
+ }
+
+ @media (max-width: 767px) {
+     .logo a {
+         background: url(https://firebasestorage.googleapis.com/v0/b/hexschool-courses.appspot.com/o/course%2FJS%20%E5%89%8D%E7%AB%AF%E4%BF%AE%E7%B7%B4%E5%85%A8%E6%94%BB%E7%95%A5%2F1629001163643-logo-sm.png?alt=media&token=914f40fc-c143-4aaa-a1c3-fb0bdd17fa9c) no-repeat;
+         width: 100%;
+         height: 50px;
+         /* margin: 1.25rem auto; */
+     }
+ }
+
+ .mainbox {
+     background: #FFFFFF;
+     box-shadow: 0 0 0 3px #F8D45A, 0 0 0 8px #FFFCEF, 0 2px 20px 0 rgba(0, 0, 0, 0.15);
+     border-radius: 4px;
+     padding: 2rem;
+ }
+
+ .filterBtn {
+     background-color: #FFFFFF;
+     border: 2px solid #2A2A2A;
+     box-shadow: 0 1px 0 0 #2A2A2A;
+     border-radius: 4px;
+     padding: 0.5rem 2rem;
+     width: auto;
+     font-weight: bold;
+     transition: background-color 0.2s ease-in-out;
+ }
+
+ .checked {
+     background-color: #F8D45A;
+ }
+
+ .filterBtn:hover {
+     background-color: #F8D45A;
+ }
+
+ .searchTitle {
+     background: #899E39;
+     border: 2px solid #899E39;
+     border-radius: 4px 0 0 4px;
+     color: #FFFFFF;
+     font-weight: bold;
+ }
+
+ .searchInput {
+     border: 2px solid #899E39;
+     border-radius: 0 4px 4px 0;
+ }
+
+ .searchInput:focus {
+     border: 2px solid #899E39;
+     box-shadow: none;
+ }
+
+ .searchBtn {
+     background: #899E39;
+     border: 2px solid #899E39;
+     border-radius: 4px;
+     padding: 0.4rem 2rem;
+     color: #FFFFFF;
+     font-weight: bold;
+ }
+
+ @media (max-width: 767px) {
+     .searchBtn {
+         width: 100%;
+     }
+
+ }
+
+ .dropdown-toggle::after {
+     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='currentColor' class='bi bi-caret-down-fill' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+     border: none;
+     vertical-align: middle;
+ }
+
+ .btn-order,
+ .btn-order-sm {
+     background: #FFFFFF;
+     border: 1px solid #9A9A9A;
+     border-radius: 4px;
+     display: block;
+ }
+
+ .btn-order:focus,
+ .btn-order-sm:focus {
+     box-shadow: 0 0 0 0.2rem rgba(154, 154, 154, 0.5);
+ }
+
+ .dropdown-item:focus {
+     background: #9A9A9A;
+ }
+
+ .btn-order-sm {
+     border: none;
+     border-radius: 30px;
+     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.20);
+     display: none;
+     padding: 0.5rem 1.25rem;
+ }
+
+ @media (max-width: 575px) {
+     .orderDrop {
+         position: absolute;
+         right: 3%;
+         bottom: 3%;
+     }
+
+     .btn-order {
+         display: none;
+     }
+
+     .btn-order-sm {
+         display: block;
+     }
+ }
+
+ table {
+     font-size: calc(12px+1vw);
+ }
+
+ .overscroll {
+     overflow: scroll;
+ }
+
+ @media (max-width: 767px) {
+     table {
+         font-size: 12px;
+     }
+ }
+
+ thead {
+     border-width: 2px 0 2px 0;
+     border-style: solid;
+     border-color: #000;
+     background: #F4F1EA;
+ }
+
+ tr {
+     border-width: 2px 0 2px 0;
+ }
+
+ .hint {
+     text-align: center;
+     line-height: 3rem;
+ }
+
+ .sortbox {
+     display: flex;
+     gap: 2px;
+ }
+
+ .sortBtn {
+     position: relative;
+ }
+
+ .caret-up,
+ .caret-down {
+     border: none;
+     background-color: transparent;
+     background-size: contain;
+     background-repeat: no-repeat;
+     width: 0.7rem;
+     height: 0.8rem;
+     position: absolute;
+ }
+
+ @media (max-width: 767px) {
+
+     .caret-up,
+     .caret-down {
+         width: 0.5rem;
+         height: 0.6rem;
+     }
+ }
+
+ .caret-up {
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-caret-up-fill' viewBox='0 0 16 16'%3E%3Cpath d='m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z'/%3E%3C/svg%3E");
+ }
+
+ .caret-down {
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-caret-down-fill' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+     bottom: 0;
+ }
+
+ .previousPageBtn,
+ .nextPageBtn {
+     background-color: #F4F1EA;
+     border: 2px solid #2A2A2A;
+     border-radius: 4px;
+     font-weight: bold;
+ }
+
+ .previousPageBtn:disabled,
+ .nextPageBtn:disabled {
+     visibility: hidden;
+ }
